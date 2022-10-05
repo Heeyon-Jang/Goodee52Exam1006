@@ -10,5 +10,6 @@
 	<h1>Hello Spring MVC</h1>
 	<img src="image/icon-spring-framework.svg">
 	<h1>여러분 안녕~!!!!</h1>
+	<h1>김가빈 바보</h1>
 </body>
 </html>
