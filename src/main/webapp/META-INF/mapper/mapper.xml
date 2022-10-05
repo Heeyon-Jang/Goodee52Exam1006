@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goodee.dao.DAO">  <!-- 이름바꾸기 -->
+
+	<!-- @mapper를 인터페이스에 써놨지 때문에 parameterType은 생략 가능 다만 resultType은 생략 불가능 -->
+
+<!-- 	<select id="checkId" resultType="UserVO"> -->
+<!-- 		select id, username, userid, password from user where userid=#{userid} and password=#{password} -->
+<!-- 	</select> -->
+	
+<!-- 	<insert id="insertData1"> -->
+<!-- 		insert into bbs(id, category, title, owner_id, owner, content) -->
+<!-- 		values(#{id}, #{category}, #{title}, #{ownerId}, #{owner}, #{content}) -->
+<!-- 	</insert> -->
+	
+<!-- 	<update id="modifyData1"> -->
+<!-- 		update bbs set title=#{title}, content=#{content}, category=#{category} where id=#{id} -->
+<!-- 	</update> -->
+	
+<!-- 	<delete id="deleteData1"> -->
+<!-- 		delete from bbs where id=#{page} -->
+<!-- 	</delete> -->
+</mapper>
