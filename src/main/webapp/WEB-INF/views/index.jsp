@@ -19,14 +19,36 @@
 	<a href="${pageContext.request.contextPath}/content">이동</a>
 	
 	<script type="text/javascript">
-// 		window.onload=function(){
-// 			location.href = "${pageContext.request.contextPath}/content";
-// 		}
-		​
 		window.addEventListener("DOMContentLoaded", function(){
-			location.href = "${pageContext.request.contextPath}/content";
-		}
-	
+			$.ajax({
+				url : "${pageContext.request.contextPath}/content",
+				type : "GET",
+				contentType:"application/json; charset=utf-8",
+				dataType : "json",
+				success : function(data){
+					console.log(data);
+					console.log("--------------");
+// 					const comdiv = document.getElementById("comment");
+					
+// 					for(let comment of data){
+// 						console.log(comment);
+// 						const div = document.createElement("div");
+// 						div.style.border = "1px solid black";
+// 						const h4 = document.createElement("h4");
+// 						h4.innerText = comment.owner;
+// 						const p = document.createElement("p");
+// 						p.innerText = comment.content;
+						
+// 						div.append(h4);
+// 						div.append(p);
+// 						comdiv.append(div);
+// 					}
+				},
+				error : function(e){
+					alert(e);
+				}
+			});		
+		});
 	</script>
 </body>
 </html>
