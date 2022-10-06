@@ -9,10 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         body{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .s1 {
             display: grid;
             grid-template-columns: repeat(4 ,1fr);
-            gap: 20px;
             margin-bottom: 40px;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,22 +55,23 @@
             margin-bottom: 20px;
             box-sizing: border-box;
         }
-        .content{
-            width: 460px;
+        .s2>.content{
+            width: 40%;
+            padding: 50px 0 0 30px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .content > h2{
+        .s2>.content > h2{
             box-sizing: border-box;
             font-size: 1.5em;
             font-weight: bold;
         } 
-        .content > p {
+        .s2>.content > p {
             margin: 10px 0 20px;
             box-sizing: border-box;
             line-height: 1.5;
             font-size: 15px;
         }
-        .content > a {
+        .s2>.content > a {
             text-decoration: none;
             border: 1px solid #262626;
             background-color: #262626;
@@ -103,7 +109,8 @@
         .s3>.content > a {
             text-decoration: none;
             border: 1px solid #262626;
-            background-color: #262626;
+            background-color: #f4f4f4;
+            color: #333;
             padding: 10px 20px;
             font-size: 15px;
             font-weight: bold;
