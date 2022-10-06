@@ -114,30 +114,17 @@
 <body>
     <main>
         <section class="s1">
-            <div>
-                <img src="https://i.ibb.co/LZPVKq9/card1.png" alt="">
-                <h3>New Surface Pro 7</h3>
-                <p></p>
-                <a href="#">LEARN MORE</a>
-            </div>
-            <div>
-                <img src="https://i.ibb.co/KjGFHVJ/card2.png" alt="">
-                <h3>New Surface Laptop 3</h3>
-                <p></p>
-                <a href="#">LEARN MORE</a>
-            </div>
-            <div>
-                <img src="https://i.ibb.co/2cnshH6/card3.png" alt="">
-                <h3>Save $150 + free controller</h3>
-                <p></p>
-                <a href="#">LEARN MORE</a>
-            </div>
-            <div>
-                <img src="https://i.ibb.co/G57P0Pb/card4.png" alt="">
-                <h3>The new Microsoft Edge</h3>
-                <p></p>
-                <a href="#">LEARN MORE</a>
-            </div>
+	        <c:forEach items="${list}" var="item1">
+	        	<c:if test="${item1.category == 1}">
+					<div>
+						<img src="${item1.img}" alt="">
+		                <h3>${item1.head }</h3>
+		                <p>${item1.content }</p>
+		                <a href="#">${item1.link}</a>	
+					</div>	        		
+		        </c:if>
+        	</c:forEach>
+    
         </section>
             <section class="s2">
                 <div class="content">
@@ -147,30 +134,18 @@
                 </div>
             </section>
             <section class="s1">
-                <div>
-                    <img src="https://i.ibb.co/zVqhWn2/card5.png" alt="">
-                    <h3>New Surface Pro 7</h3>
-                    <p></p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-                <div>
-                    <img src="https://i.ibb.co/mGZcxcn/card6.jpg" alt="">
-                    <h3>New Surface Laptop 3</h3>
-                    <p></p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-                <div>
-                    <img src="https://i.ibb.co/NpPvVHj/card7.png" alt="">
-                    <h3>Save $150 + free controller</h3>
-                    <p></p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-                <div>
-                    <img src="https://i.ibb.co/LkP4L5T/card8.png" alt="">
-                    <h3>The new Microsoft Edge</h3>
-                    <p></p>
-                    <a href="#">LEARN MORE</a>
-                </div>
+            
+              <c:forEach items="${list}" var="item2">
+	        	<c:if test="${item2.category == 2}">
+					<div>
+						<img src="${item2.img}" alt="">
+		                <h3>${item2.head }</h3>
+		                <p>${item2.content }</p>
+		                <a href="#">${item2.link}</a>	
+					</div>	        		
+		        </c:if>
+        	</c:forEach>
+                
             </section>
                 <section class="s3">
                     <div class="content">
