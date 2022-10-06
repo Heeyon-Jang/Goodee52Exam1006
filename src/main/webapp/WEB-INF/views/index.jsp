@@ -121,7 +121,6 @@
 <body>
     <main>
         <section class="s1">
-        
              <c:forEach items="${list}" var="item1">
 	        	<c:if test="${item1.category == 1}">
 					<div>
@@ -133,32 +132,32 @@
 		        </c:if>
         	</c:forEach>
         </section>
-            <section class="s2">
-                <div class="content">
-                    <h2>Xbox Game Pass Ultimate</h2>
-                    <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game.</p>
-                    <a href="#">Join Now</a>
-                </div>
-            </section>
-            <section class="s1">
-                <c:forEach items="${list}" var="item2">
-		        	<c:if test="${item2.category == 2}">
-						<div>
-							<img src="${item2.img}" alt="">
-			                <h3>${item2.head }</h3>
-			                <p>${item2.content }</p>
-			                <a href="#">${item2.link}</a>	
-						</div>	        		
-			        </c:if>
-	        	</c:forEach>
-            </section>
-                <section class="s3">
-                    <div class="content">
-                        <h2>Xbox Game Pass Ultimate</h2>
-                        <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game.</p>
-                        <a href="#">Join Now</a>
-                    </div>
-                </section>
+        <section class="s2">
+            <div class="content">
+                <h2>Xbox Game Pass Ultimate</h2>
+                <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game.</p>
+                <a href="#">Join Now</a>
+            </div>
+        </section>
+        <section class="s1">
+            <c:forEach items="${list}" var="item2">
+      	<c:if test="${item2.category == 2}">
+		<div>
+			<img src="${item2.img}" alt="">
+               <h3>${item2.head }</h3>
+               <p>${item2.content }</p>
+               <a href="#">${item2.link}</a>	
+		</div>	        		
+       </c:if>
+     	</c:forEach>
+        </section>
+        <section class="s3">
+            <div class="content">
+                <h2>Xbox Game Pass Ultimate</h2>
+                <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game.</p>
+                <a href="#">Join Now</a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
