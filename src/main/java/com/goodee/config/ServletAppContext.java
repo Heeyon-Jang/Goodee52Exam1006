@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
@@ -159,16 +158,5 @@ public class ServletAppContext implements WebMvcConfigurer{
 	  * 
 	  * 위에 @EnableTransactionManager사용함
 	  */
-		@Bean
-		public ReloadableResourceBundleMessageSource messageSource() {
-			
-			ReloadableResourceBundleMessageSource res = new ReloadableResourceBundleMessageSource();
-			//res에다가 시간을 입력해놓으면 주기적으로 오는 시간마다 모디터링함
-					//Properties 안의 내용이 자주바뀌면 별로
-			res.setBasenames("/META-INF/properties/error_message");
-			//여러개 사용할때는 이렇게 
-//			res.setBasenames("/META-INF/properties/data1","/META-INF/properties/data2");
-			
-			return res;
-		}
+	 
 }

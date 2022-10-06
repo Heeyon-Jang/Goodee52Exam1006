@@ -10,12 +10,24 @@
 	<h1>Hello Spring MVC</h1>
 	<img src="image/icon-spring-framework.svg">
 	<h1>여러분 안녕~!!!!</h1>
-	<h1>김가빈 바보</h1>
+	<h1>김가빈 바보</h1> 
 	<h1>리더님 최고</h1>
 
 
 	<h1>다 지웠습니당</h1>
 
+	<a href="${pageContext.request.contextPath}/content">이동</a>
+	
+	<script type="text/javascript">
+// 		window.onload=function(){
+// 			location.href = "${pageContext.request.contextPath}/content";
+// 		}
+		​
+		window.addEventListener("DOMContentLoaded", function(){
+			location.href = "${pageContext.request.contextPath}/content";
+		}
+	
+	</script>
 </body>
 </html>
 

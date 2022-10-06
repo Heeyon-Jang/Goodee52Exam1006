@@ -2,8 +2,14 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.goodee.dao.DAO">  <!-- 이름바꾸기 -->
+<mapper namespace="com.goodee.dao.CardTableDAO">  <!-- 이름바꾸기 -->
 
+
+	<select id="getContent" resultType="CardTableVO">
+		select id, category, img, head, content, link from card_table
+	</select> 
+	
+	
 	<!-- @mapper를 인터페이스에 써놨지 때문에 parameterType은 생략 가능 다만 resultType은 생략 불가능 -->
 
 <!-- 	<select id="checkId" resultType="UserVO"> -->
