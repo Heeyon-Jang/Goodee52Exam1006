@@ -243,7 +243,7 @@ nav {
 	}
 }
 
-@media ( max-width : 480px) {
+@media ( max-width : 500px) {
 	.s1 div {
 		width: 100%;
 	}
