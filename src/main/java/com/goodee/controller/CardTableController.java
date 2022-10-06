@@ -25,7 +25,7 @@ public class CardTableController {
 	public String preMove(Model model) {
 		List<CardTableVO> list = service.getContent();
 		model.addAttribute("list", list);
-		return "testIndex";
+		return "index";
 	}
 	
 }
