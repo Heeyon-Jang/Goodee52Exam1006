@@ -11,6 +11,6 @@ public class HomeController {
 	
 	@RequestMapping(value="/") // servlet에 가장 위에 있는 @WebServlet("/Quiz1Controller")이 역활
 	public String home() {
-		return "index";
+		return "prev";
 	}
 }
