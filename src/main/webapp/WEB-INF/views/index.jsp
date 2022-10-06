@@ -30,7 +30,11 @@
 	<h1>장희연 수정 중</h1>
 	<h1>혜은 테스트1</h1>
 	<h1>혜은 테스트2</h1>
+<<<<<<< HEAD
 	어롸너ㅗㅇ라ㅓㄴ모아ㅓ로나ㅓ오
+=======야야야야야야야
+	<h1>내가 또 올림!!!!!!</h1>
+>>>>>>> branch 'master' of https://github.com/gabeenK/Goodee52Exam1006.git
 </body>
 </html>
 
